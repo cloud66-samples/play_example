@@ -27,5 +27,5 @@ COPY play-java-seed $APP_DIR
 WORKDIR $APP_DIR
 
 
-RUN sbt build
+RUN sbt test
 CMD ["sbt", "run"]
