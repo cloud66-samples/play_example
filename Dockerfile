@@ -25,3 +25,5 @@ RUN \
   mkdir $APP_DIR
 COPY src $APP_DIR
 WORKDIR $APP_DIR
+
+CMD ["cbt", "run"]
