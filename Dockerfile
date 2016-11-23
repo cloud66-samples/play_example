@@ -26,4 +26,5 @@ RUN \
 COPY src $APP_DIR
 WORKDIR $APP_DIR
 
+RUN cbt build
 CMD ["cbt", "run"]
