@@ -1,0 +1,11 @@
+.ivy2
+.sbt
+.bash_history
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
