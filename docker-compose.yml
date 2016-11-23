@@ -1,7 +1,9 @@
 version: '2'
 services:
   play:
+    ports:
+      - 9000:9000
     build: .
     volumes:
-     - ./src:/home/app
+     - ./src:/home/play-java-seed
 

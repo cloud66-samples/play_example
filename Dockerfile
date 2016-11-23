@@ -20,11 +20,12 @@ RUN \
   apt-get install sbt && \
   sbt sbtVersion
 
-ENV APP_DIR /home/app
+ENV APP_DIR /home/play-java-seed
 RUN \
   mkdir $APP_DIR
-COPY src $APP_DIR
+COPY play-java-seed $APP_DIR
 WORKDIR $APP_DIR
+
 
 RUN sbt build
 CMD ["sbt", "run"]
